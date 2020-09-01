@@ -1,3 +1,221 @@
-p {
-    color: purple;
+/* 顶部区域
+---------------------------------------------------------------- */
+
+.top {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+
+.top .user-info {
+    float: left;
+}
+
+.top .nav-list {
+    float: right;
+}
+
+.top .nav-list .nav-item {
+    float: left;
+    padding: 0 10px;
+}
+
+.top .nav-list .nav-item:hover {
+    background-color: #fff;
+}
+
+.top .nav-list .nav-item .iconfont {
+    font-size: 12px;
+}
+
+
+/* 头部搜索
+---------------------------------------------------------------- */
+
+.header {
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid #52c41a;
+    margin-bottom: 30px;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo h1 {
+    font-size: 30px;
+    line-height: 100px;
+    color: #52c41a;
+}
+
+.header .search-wrap {
+    font-size: 16px;
+    float: left;
+}
+
+.header .search-wrap .search-input {
+    float: left;
+    width: 400px;
+    height: 38px;
+    border: 2px solid #52c41a;
+    outline: none;
+}
+
+.header .search-wrap .search-btn {
+    float: left;
+    width: 80px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    background-color: #52c41a;
+}
+
+.header .search-wrap .search-btn:hover {
+    opacity: .7;
+}
+
+.header .search-wrap .search-box {
+    margin-top: 20px;
+}
+
+.header .search-wrap .nav-list {
+    margin-top: 10px;
+}
+
+.header .nav-list .nav-item {
+    margin-right: 40px;
+    float: left;
+}
+
+.header .nav-list .nav-item a {
+    font-weight: 200;
+}
+
+.header .nav-list .nav-item a.active {
+    color: #52c41a;
+}
+
+
+/* 焦点区域
+---------------------------------------------------------------- */
+
+.focus {
+    margin-bottom: 20px;
+}
+
+.focus .categories {
+    float: left;
+    height: 440px;
+    background-color: #fff;
+}
+
+.focus .categories .parent-categories {
+    padding: 20px 0;
+}
+
+.focus .categories .parent-categories .parent-categories-item {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.focus .categories .parent-categories .parent-categories-item:hover {
+    background-color: #ddd;
+}
+
+.focus .categories .parent-categories .keyword-item {
+    font-size: 14px;
+}
+
+.focus .swiper {
+    position: relative;
+    float: left;
+    height: 440px;
+    background-color: navajowhite;
+}
+
+.focus .swiper .img-wrap,
+.focus .swiper .img-item {
+    height: 100%;
+}
+
+.focus .swiper .img-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.focus .swiper .arrow {
+    position: absolute;
+    top: 50%;
+    height: 60px;
+    font-size: 60px;
+    color: #007AFF;
+    line-height: 60px;
+    margin-top: -30px;
+}
+
+.focus .swiper .left-arrow {
+    left: 0;
+}
+
+.focus .swiper .right-arrow {
+    right: 0;
+}
+
+.focus .swiper .btn-wrap {
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 20px;
+}
+
+.focus .swiper .btn-wrap .btn-item {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: .2;
+}
+
+.focus .swiper .btn-wrap .btn-item.active {
+    opacity: 1;
+    background-color: #52c41a;
+}
+
+
+/* 热销区域
+---------------------------------------------------------------- */
+
+.hot {}
+
+.hot .container {
+    height: 300px;
+    background-color: cyan;
+}
+
+
+/* 楼层
+---------------------------------------------------------------- */
+
+.floor {}
+
+.floor .container {
+    height: 600px;
+    background-color: hotpink;
+}
+
+
+/* 底部
+---------------------------------------------------------------- */
+
+.footer {
+    height: 252px;
+    background-color: black;
 }
