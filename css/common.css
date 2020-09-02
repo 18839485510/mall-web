@@ -40,3 +40,52 @@ a:hover {
 .clearfix {
     *zoom: 1;
 }
+
+.product-list .product-item {
+    float: left;
+    height: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.product-list .product-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-list .product-item a:hover {
+    color: #333;
+}
+
+.product-list .product-item img {
+    width: 180px;
+    height: 180px;
+}
+
+.product-list .product-item:first-child {
+    margin-left: 0;
+}
+
+.product-list .product-item .product-name {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.product-list .product-item .product-price {
+    font-size: 14px;
+    color: #f01;
+    float: left;
+}
+
+.product-list .product-item .product-paynums {
+    color: rgba(0, 0, 0, .45);
+    font-size: 12px;
+    float: right;
+}

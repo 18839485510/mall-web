@@ -126,6 +126,7 @@
 }
 
 .focus .categories .parent-categories .keyword-item {
+    color: #333;
     font-size: 14px;
 }
 
@@ -138,15 +139,19 @@
 
 .focus .swiper .img-wrap,
 .focus .swiper .img-item {
+    width: 100%;
     height: 100%;
 }
 
 .focus .swiper .img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.focus .swiper .img-wrap .img-item {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .focus .swiper .arrow {
@@ -157,6 +162,8 @@
     color: #007AFF;
     line-height: 60px;
     margin-top: -30px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .focus .swiper .left-arrow {
@@ -193,22 +200,72 @@
 /* 热销区域
 ---------------------------------------------------------------- */
 
-.hot {}
+.hot {
+    margin-bottom: 40px;
+}
 
-.hot .container {
+.hot .hot-card {
+    float: left;
     height: 300px;
-    background-color: cyan;
+    font-size: 35px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    padding-top: 90px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+    background-image: linear-gradient(#1890ff, #52c41a);
+}
+
+.hot .hot-card h4 {
+    margin-bottom: 15px;
+}
+
+.hot .hot-card .icon-cart {
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.hot .product-list {
+    float: left;
+}
+
+.hot .product-list .product-item:first-child {
+    margin-left: 0;
 }
 
 
 /* 楼层
 ---------------------------------------------------------------- */
 
-.floor {}
+.floor .floor-wrap {
+    margin-bottom: 20px;
+}
 
-.floor .container {
-    height: 600px;
-    background-color: hotpink;
+.floor .floor-title {
+    margin-bottom: 15px;
+}
+
+.floor .floor-title h4 {
+    font-size: 18px;
+}
+
+.floor .floor-wrap:nth-child(2n+1) .floor-title h4 {
+    color: #52c41a;
+    border-bottom: 1px solid #52c41a;
+}
+
+.floor .floor-wrap:nth-child(2n) .floor-title h4 {
+    color: purple;
+    border-bottom: 1px solid purple;
+}
+
+.floor .product-list .product-item:nth-child(5n+1) {
+    margin-left: 0;
+}
+
+.floor .product-list .product-item {
+    margin-bottom: 15px;
 }
 
 
@@ -218,4 +275,32 @@
 .footer {
     height: 252px;
     background-color: black;
+}
+
+.footer .promise {
+    font-size: 20px;
+    color: #fff;
+    line-height: 145px;
+    padding: 0 50px;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.footer .promise .promise-item1,
+.footer .promise .promise-item2 {
+    padding-right: 269px;
+}
+
+.footer .links {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer .links a {
+    padding-right: 20px;
+    color: #888;
+}
+
+.footer .copyrigh {
+    text-align: center;
+    color: #888;
 }
